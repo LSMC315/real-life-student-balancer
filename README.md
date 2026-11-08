@@ -19,36 +19,21 @@ A professional-grade productivity portal and wellness support system. This appli
 ### Methodological References & Domain Resources
 *   **Domain & Project Inspiration:** [DataKind's Post-Secondary Student Success Framework](https://www.datakind.org/2022/10/25/improving-college-student-success-datakinds-continued-work-in-post-secondary-education/) – This project builds upon the data-driven intervention concepts outlined by DataKind and John Jay College, leveraging predictive modeling and cognitive AI to reduce student dropout risks and optimize academic persistence.
 
- ┌────────────────────────────────────────────────────────┐
- │               USER INTERFACE BROWSER LAYER             │
- │         (Streamlit Frontend Web App Environment)       │
- └───────────────────────────┬────────────────────────────┘
-                             │
-            Sends Real-Time Sliders & Inputs
-                             │
-                             ▼
- ┌────────────────────────────────────────────────────────┐
- │                 LOCAL PYTHON RUNTIME SYSTEM            │
- │           (app_merge2copy.py / Logic Engine)           │
- └─────┬─────────────────────┬──────────────────────┬─────┘
-       │                     │                      │
-       │ Reads Roadmap Data  │ Evaluates Thresholds │ Reads Care Directories
-       ▼                     ▼                      ▼
- ┌───────────────┐     ┌───────────────┐     ┌───────────────┐
- │ MOCK ROADMAP  │     │ WELLNESS PULSE│     │ COMMUNITY     │
- │ DATA TIER     │     │ RULES MATRIX  │     │ LINKS MATRIX  │
- │ (mock_data.py)│     │ (Instant      │     │ (mock_data.py)│
- │               │     │  Triggers)    │     │               │
- └───────────────┘     └───────┬───────┘     └───────────────┘
-                               │
-               Generates Strategy Insights
-                               │
-                               ▼
- ┌────────────────────────────────────────────────────────┐
- │               SECURE BACKEND STORAGE SYNC              │
- │         (Encrypted Environment Credentials Layer)      │
- └────────────────────────────────────────────────────────┘
 
+🗺️ Systems Architecture Layout
+
+1. Client Interaction Layer (Frontend)
+• Streamlit Web Interface Wrapper: Displays the interactive student workspace, personal pulse adjustment controls, and resource navigation tabs.
+• Data Flow: Triggers immediate reactive script executions whenever variables are adjusted.
+2. Core Application Processing Layer (Logic Backend)
+• Python Execution Environment (app_merge2copy.py): Runs the dynamic validation loops and matches input benchmarks.
+• Automated Pulse Monitor: Constantly evaluates Stress (6+), Exhaustion (7+), and Classwork Pressure (8+) thresholds to fire overlay notices.
+• Time-Resource Analyzer: Multiplies selected course arrays by 9 hours to forecast expected weekly study commitments against work/family hours.
+3. Data & Resource Management Directory (Memory Arrays)
+• Curriculum Tracks (mock_data.py): Hosts the static catalog paths for the Valencia College A.S. Software Development milestones (including Statistics and English).
+• Community Care Link Matrices (mock_data.py): Houses the verified outreach access parameters for United Way 211, food banks, and campus basic needs centers.
+4. Encrypted Cloud Infrastructure (Security Layer)
+• Streamlit Secrets Environment Platform: A secure memory vault holding the encrypted key strings for your configurations, entirely isolated from your public text code views.
 
 ## 🌐 Live Web Deployment & Submission Details
 
