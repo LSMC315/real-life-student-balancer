@@ -48,7 +48,7 @@ def analyze_student_wellness_pulse(stress, sleep, workload, work_hrs, childcare_
             "✅ **Good balance on your time.** Your current work and family hours leave you with a healthy amount of room to handle your classes.")
 
     # Stress & Overwhelm Check (Connected directly to your resources tab)
-    if stress >= 7 or workload >= 7:
+    if stress >= 6 or workload >= 8:
         insights.append(
             "⚡ **Things are feeling heavy right now.** If you are feeling overwhelmed by your workload, "
             "remember you can use Valencia's free tutoring resources or reach out to your professors "
@@ -85,32 +85,30 @@ with tab1:
 
     # --- INPUTS PLACED OUTSIDE THE FORM FOR INSTANT PAGE REFRESHING ---
     st.markdown("### 📊 Personal Pulse Check")
-    stress_slider = st.slider(
-        "Current Stress Level (1-10)", min_value=1, max_value=10, value=5)
 
-    # Instant Stress Trigger
-    if stress_slider >= 8:
+    # 1. Stress Slider: Starts at 0, triggers warning at 6 or higher
+    stress_slider = st.slider(
+        "Current Stress Level (0-10)", min_value=0, max_value=10, value=0)
+    if stress_slider >= 6:
         st.info(
             "❤️ **Hey, things look heavy right now.** We noticed your stress level is high. "
             "Remember you don't have to carry it alone. Head over to the **Community Support Links** "
             "tab at the top of the page for free, confidential local care, food, and mental health resources."
         )
 
-    sleep_slider = st.slider("Exhaustion Level (1-10)",
-                             min_value=1, max_value=10, value=4)
-
-    # Instant Exhaustion Trigger
-    if sleep_slider >= 8:
+    # 2. Exhaustion Slider: Starts at 0, triggers warning at 7 or higher
+    sleep_slider = st.slider("Exhaustion Level (0-10)",
+                             min_value=0, max_value=10, value=0)
+    if sleep_slider >= 7:
         st.info(
             "🛌 **Energy levels are critically low.** Severe exhaustion drains focus. "
             "If your sleep schedule is completely disrupted, check out the **Community Support Links** "
             "tab to see available health and wellness resources."
         )
 
+    # 3. Classwork Pressure Slider: Starts at 0, triggers warning at 8 or higher
     workload_slider = st.slider(
-        "Classwork Pressure (1-10)", min_value=1, max_value=10, value=5)
-
-    # Instant Classwork Pressure Trigger
+        "Classwork Pressure (0-10)", min_value=0, max_value=10, value=0)
     if workload_slider >= 8:
         st.info(
             "⚡ **The academic load is hitting a critical peak.** You don't have to navigate "
@@ -124,9 +122,9 @@ with tab1:
     with st.form("wellness_data_form"):
         st.markdown("### ⏱️ Weekly Commitments")
         work_slider = st.slider("Weekly Work Hours",
-                                min_value=0, max_value=60, value=40, step=5)
+                                min_value=0, max_value=60, value=0, step=5)
         childcare_slider = st.slider(
-            "Weekly Family & Childcare Hours", min_value=0, max_value=80, value=20, step=5)
+            "Weekly Family & Childcare Hours", min_value=0, max_value=80, value=0, step=5)
 
         st.markdown("---")
         st.markdown("### 📚 Select Your Current Courses")
