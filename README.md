@@ -22,10 +22,10 @@ A professional-grade productivity portal and wellness support system. This appli
 
 ## 🌐 Live Web Deployment & Submission Details
 
-*   **Production Deployment URL:** ([Real Life Student Balancer App](https://real-life-student-balancer.streamlit.app)
+*   **Production Deployment URL:** [Real Life Student Balancer App](https://real-life-student-balancer.streamlit.app)
 *   **Hackathon Track:** Data for Good / Education Support Systems
 *   **Academic Integration Source:** Valencia College A.S. Computer Programming and Analysis Curriculum Guidelines
 
 ## 🤝 Project Collaborators
-*   Developed and engineered locally by our hackathon sprint duo (LaDonna Comer and Shawnna Walker). All rights reserved (2026).
+*   Developed and engineered locally by our hackathon sprint duo [LaDonna Comer](https://github.com/LSMC315) and [Shawnna Walker](https://github.com/sdwalker713-hub). All rights reserved (2026).
 
