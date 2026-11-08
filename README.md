@@ -8,7 +8,16 @@ A professional-grade productivity portal and wellness support system. This appli
 *   **Academic Roadmap Tracker:** A pre-loaded course roadmap map pulling program metrics directly from the Valencia College Associate in Science Computer Programming and Analysis curriculum track.
 *   **Community Support Hub:** Bridges the gap between academic pressure and real-world care with direct resources for crisis intervention (211), food pantries, and basic essentials.
 
-## 🛠️ Tech Stack & Dependencies
+## 🛠️ Tech Stack, Dependencies & Resources
+
+### System Architecture
 *   **Frontend Interface Wrapper:** Streamlit Web Framework Environment
 *   **Core Logic Runtime Engine:** Python 3
+*   **Cognitive Reasoning Engine:** Google Gemini AI API (Advanced Large Language Models for automated advisory logic, data synthesis, and intelligent student health insight extraction)
 *   **External Assets API:** Google Fonts Ecosystem (Poppins Typography Grid)
+
+### Methodological References & Domain Resources
+*   **Domain & Project Inspiration:** [DataKind's Post-Secondary Student Success Framework](https://www.datakind.org/2022/10/25/improving-college-student-success-datakinds-continued-work-in-post-secondary-education/) – This project builds upon the data-driven intervention concepts outlined by DataKind and John Jay College, leveraging predictive modeling and cognitive AI to reduce student dropout risks and optimize academic persistence.
+
+
+
