@@ -10,7 +10,7 @@ A professional-grade productivity portal and wellness support system. This appli
 
 ## 🛠️ Tech Stack, Dependencies & Resources
 
-### System Architecture
+### 🗺️ Systems Architecture Diagram
 *   **Frontend Interface Wrapper:** Streamlit Web Framework Environment
 *   **Core Logic Runtime Engine:** Python 3
 *   **Cognitive Reasoning Engine:** Google Gemini AI API (Advanced Large Language Models for automated advisory logic, data synthesis, and intelligent student health insight extraction)
@@ -18,6 +18,36 @@ A professional-grade productivity portal and wellness support system. This appli
 
 ### Methodological References & Domain Resources
 *   **Domain & Project Inspiration:** [DataKind's Post-Secondary Student Success Framework](https://www.datakind.org/2022/10/25/improving-college-student-success-datakinds-continued-work-in-post-secondary-education/) – This project builds upon the data-driven intervention concepts outlined by DataKind and John Jay College, leveraging predictive modeling and cognitive AI to reduce student dropout risks and optimize academic persistence.
+
+ ┌────────────────────────────────────────────────────────┐
+ │               USER INTERFACE BROWSER LAYER             │
+ │         (Streamlit Frontend Web App Environment)       │
+ └───────────────────────────┬────────────────────────────┘
+                             │
+            Sends Real-Time Sliders & Inputs
+                             │
+                             ▼
+ ┌────────────────────────────────────────────────────────┐
+ │                 LOCAL PYTHON RUNTIME SYSTEM            │
+ │           (app_merge2copy.py / Logic Engine)           │
+ └─────┬─────────────────────┬──────────────────────┬─────┘
+       │                     │                      │
+       │ Reads Roadmap Data  │ Evaluates Thresholds │ Reads Care Directories
+       ▼                     ▼                      ▼
+ ┌───────────────┐     ┌───────────────┐     ┌───────────────┐
+ │ MOCK ROADMAP  │     │ WELLNESS PULSE│     │ COMMUNITY     │
+ │ DATA TIER     │     │ RULES MATRIX  │     │ LINKS MATRIX  │
+ │ (mock_data.py)│     │ (Instant      │     │ (mock_data.py)│
+ │               │     │  Triggers)    │     │               │
+ └───────────────┘     └───────┬───────┘     └───────────────┘
+                               │
+               Generates Strategy Insights
+                               │
+                               ▼
+ ┌────────────────────────────────────────────────────────┐
+ │               SECURE BACKEND STORAGE SYNC              │
+ │         (Encrypted Environment Credentials Layer)      │
+ └────────────────────────────────────────────────────────┘
 
 
 ## 🌐 Live Web Deployment & Submission Details
