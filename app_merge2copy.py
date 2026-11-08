@@ -3,8 +3,8 @@ import datetime
 from mock_data import get_valencia_programming_catalog, get_community_resources
 
 # Page configuration
-st.set_page_config(page_title="Student Life Balancer", layout="wide")
-st.title("🌱 Student Life Balancer")
+st.set_page_config(page_title="Real life Student Balancer", layout="wide")
+st.title("🌱 Real Life Student Balancer")
 
 # --- GOOGLE FONTS STYLESHEET WRAPPER ---
 st.markdown(
