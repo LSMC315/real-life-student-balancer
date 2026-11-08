@@ -1,6 +1,6 @@
 # 🌱 Real Life Student Balancer
 
-A professional-grade productivity portal and wellness support system. This application evaluates a student's unmovable life constraints alongside their active academic course load to dynamically analyze workload stability, prevent operational burnout, and protect student well-being.
+An interactive student support system built to help students stay balanced. The app compares a student's fixed work and family commitments against their active course schedule to flag high-stress workloads, prevent burnout, and protect their well-being.
 
 ## 🚀 Core Systems Architecture
 *   **Time-Resource Optimization Engine:** Tracks weekly fixed employment and family commitment hours against estimated credit unit study loops.
