@@ -20,4 +20,12 @@ A professional-grade productivity portal and wellness support system. This appli
 *   **Domain & Project Inspiration:** [DataKind's Post-Secondary Student Success Framework](https://www.datakind.org/2022/10/25/improving-college-student-success-datakinds-continued-work-in-post-secondary-education/) – This project builds upon the data-driven intervention concepts outlined by DataKind and John Jay College, leveraging predictive modeling and cognitive AI to reduce student dropout risks and optimize academic persistence.
 
 
+## 🌐 Live Web Deployment & Submission Details
+
+*   **Production Deployment URL:** ([Real Life Student Balancer App](https://real-life-student-balancer.streamlit.app)
+*   **Hackathon Track:** Data for Good / Education Support Systems
+*   **Academic Integration Source:** Valencia College A.S. Computer Programming and Analysis Curriculum Guidelines
+
+## 🤝 Project Collaborators
+*   Developed and engineered locally by our hackathon sprint duo (LaDonna Comer and Shawnna Walker). All rights reserved (2026).
 
